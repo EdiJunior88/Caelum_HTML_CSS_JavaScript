@@ -1,0 +1,7 @@
+/*
+Definimos que um elemento não tem nenhuma margem acima ou abaixo de seu conteúdo e que o navegador define uma margem igual para ambos de acordo com o espaço disponível
+*/
+
+p {
+  margin: 0 auto;
+}
