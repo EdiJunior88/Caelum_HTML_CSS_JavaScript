@@ -3,7 +3,17 @@
 
 <p>
 Esta apostila da Caelum visa ensinar de uma maneira elegante, mostrando apenas o que é necessário e quando é necessário, 
-no momento certo, poupando o leitor de assuntos que não costumam ser de seu interesse em determinadas fases do aprendizado.</p>
+no momento certo, poupando o leitor de assuntos que não costumam ser de seu interesse em determinadas fases do aprendizado.
+</p>
+
+<hr/>
+
+<p>
+Esse material é parte integrante do treinamento Desenvolvimento Web com HTML, CSS e JavaScript e distribuído gratuitamente 
+exclusivamente pelo site da Caelum. Todos os direitos são reservados à Caelum. A distribuição, cópia, revenda e utilização
+para ministrar treinamentos são absolutamente vedadas. Para uso comercial deste material, por favor, consulte a Caelum 
+previamente.
+</p>
 
 <hr/>
 
@@ -71,5 +81,5 @@ no momento certo, poupando o leitor de assuntos que não costumam ser de seu int
 
 <hr/>
 
-<h4><b>Aulas:</b> :green_book: :books: 59 capítulos + Exercícios</h4>
+<h4><b>Curso:</b> :green_book: :books: 59 capítulos + Exercícios</h4>
 <h4><b>Status do Curso:</b> :speech_balloon: Estudando</h4>
