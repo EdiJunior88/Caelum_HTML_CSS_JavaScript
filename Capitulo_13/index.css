@@ -1,0 +1,87 @@
+/* 
+img {
+  width: 300px;
+}
+
+No código acima estamos aplicando uma largura de 300px para todas as tags <img>. Mas e se nós só quisermos aplicar essa largura apenas para as imagens que estão nas figuras? É aí que entra o seletor mais específico:
+
+figure img {
+  width: 300px;
+}
+
+Agora estamos aplicando a largura de 300px apenas às imagens que são filhas de uma tag <figure>. Outra forma de selecionar elementos mais específicos é usando o atributo id="" nos elementos que queremos estilizar e depois fazer a chamada de seletor de id :
+
+
+#matriz-musicdot {
+  width: 300px;
+}
+
+#familia-tupfeln {
+  width: 300px;
+}
+
+Só que não é recomendado o uso de id para a estilização de elementos já que a idéia do atributo é para fazer uma referência única na página como fizemos na parte dos links. Quando queremos estilizar elementos específicos é melhor utilizar o atributo class="" . O comportamento no CSS será idêntico ao do atributo id="" , mas class foi feito para ser usado no CSS e no JavaScript
+*/
+
+.matriz-musicdot {
+  width: 300px;
+}
+
+.familia-tupfeln {
+  width: 300px;
+}
+
+p {
+  Pontuação 1
+  color: blue;
+}
+
+.paragrafo {
+  Pontuação 10
+  color: red;
+}
+
+#paragrafo-rosa {
+  Pontuação 100
+  color: pink;
+}
+
+/*
+No exemplo acima o parágrafo vai ficar com a cor rosa porque o seletor que tem a cor rosa é o seletor de maior pontuação. 
+
+Quando elementos possuem a mesma pontuação quem prevalece é a propriedade do último seletor:
+
+
+/* p {
+  Pontuação 1
+  color: blue;
+}
+
+p {
+  Pontuação 1
+  color: red;
+}
+
+
+No exemplo acima a cor do parágrafo será vermelha.
+
+Podemos também somar os pontos para deixar nosso seletor mais forte:
+
+
+body p {
+  Seletor de tag + outro seletor de tag = 2 pontos
+  color: brown;
+}
+
+p {
+  Pontuação 1
+  color: blue;
+}
+
+No exemplo acima nós deixamos nosso seletor mais específico para os <p> que estão dentro de uma tag <body> , portanto a cor do parágrafo será marrom
+
+Em resumo:
+
+Quanto mais específico é o nosso seletor, maior sua pontuação no nível de especificidade do CSS.
+Portanto devemos sempre trabalhar com uma baixa especificidade, para que não seja impossível sobrescrever valores quando necessário em uma situação específica.
+*/

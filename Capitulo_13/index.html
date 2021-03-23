@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="../Capitulo_13/index.css">
+  <title>Seletores Mais Específicos e Herança</title>
+</head>
+<body>
+  <h1>Seletores Específicos</h1>
+  <p>
+    Por hora veremos um seletor que deixa nossa estilização um pouco mais precisa do que fazemos agora.
+  </p>
+
+  <img src="../Projeto/img/logo.svg" alt="Logo da MusicDot">
+
+  <figure>
+    <img src="../Projeto/img/matriz-musicdot.png" alt="Foto da matriz da MusicDot" class="matriz-musicdot">
+    <figcaption>Matriz da MusicDot</figcaption>
+  </figure>
+
+  <figure>
+    <img src="../Projeto/img/familia-tupfeln.jpg" alt="Foto da família Tupfeln" class="familia-tupfeln">
+    <figcaption>Família	Tüpfeln</figcaption>
+  </figure>
+
+  <h2>Gau de Especifidade de um Seletor</h2>
+  <p>
+    Existe uma coisa muito importante no CSS que precisamos tomar cuidado é o <strong>grau de especificidade de um seletor</strong>. Isto é, a prioridade de interpretação de um seletor pelo navegador. Para entender estas regras de especificidade de um selector, ao criarmos um seletor de tag a sua pontuação se torna <strong>1</strong>. Quando usamos um seletor de classe sua pontuação se torna <strong>10</strong>. Quando usamos um seletor de id sua pontuação se torna <strong>100</strong>. Ao fim, o navegador soma a pontuação dos seletores aplicados à um elemento, e as propriedades com o seletor de maior pontuação são as que valem.
+  </p>
+
+  <p class="paragrafo" id="paragrafo-rosa">
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit expedita eius dignissimos. Magnam praesentium a velit cum pariatur nemo amet ut, nesciunt dicta similique voluptatibus quo deleniti aspernatur atque architecto.
+  </p>
+</body>
+</html>
