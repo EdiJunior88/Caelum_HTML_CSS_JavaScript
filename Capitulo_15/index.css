@@ -1,0 +1,17 @@
+/*
+h2 {
+  font-size: 24px;
+  font-weight: bold;
+  border-bottom: 1px solid #000000;
+}
+
+No exemplo acima adicionamos estilo nas tags <h2> para ter um tamanho de fonte maior, uma fonte mais grossa e uma borda abaixo para fazer o efeito de linha divisória. Até aqui tudo certo. Mas agora vamos colocar um outro título na página chamada "Sobre a MusicDot" e esse título tem relevância maior do que os dois outros títulos que temos (História e Diferenciais), portanto vamos ter que modificar suas tags para uma de menos importância:
+
+Por isso o ideal é declarar estilos com classes ao invés de nomes de tags. Uma dica pra dar nome às classes é elas representarem o papel que estas tags estão exercendo em conjunto com os estilos declarados, no nosso caso, estamos declarando um conjunto de estilo para subtítulos.
+*/
+
+.subtitulo {
+  font-size: 24px;
+  font-weight: bold;
+  border-bottom: 1px solid #000000;
+}
