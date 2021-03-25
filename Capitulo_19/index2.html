@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="../Capitulo_19/index2.css">
+  <title>Tipos de Display</title>
+</head>
+<body>
+  <h1>Tipos de Display</h1>
+
+  <p>
+    Existem 2 tipos de display que caracterizam a exibição padrão da maior parte dos elementos HTML: <code>display: block</code> e <code>display: inline</code>. A maneira mais fácil de ver a diferença entre eles é usando as tags que possuem essas propriedades por padrão, &ltp&gt e &lta&gt respectivamente, e colocar uma cor de fundo.
+  </p>
+
+  <p>Um parágrafo que é block</p>
+  <a>Um link que é inline</a>
+
+  <p>
+    Veja o espaço que esses elementos realmente ocupam. A tag &ltp&gt ocupa toda a largura da página enquanto a tag &lta&gt ocupa apenas o espaço necessário para mostrar o texto que colocamos. Vamos colocar mais elementos no nosso exemplo acima.
+  </p>
+
+  <p>Um parágrafo que é block</p>
+  <p>Mais um parágrafo que é block</p>
+  <a>Um link que é inline</a>
+  <a>Mais um link que é inline</a>
+
+  <p>
+    Podemos observar que agora um parágrafo ficou um embaixo do outro e os links ficaram um do lado do outro. Esses comportamentos são os esperados de elementos <code>block</code> e <code>inline</code>. Como um elemento block ocupa toda a largura da tela não podemos colocar outro elemento do lado porque não há espaço. Agora como no inline o elemento ocupa só o espaço necessário para mostrar nosso texto então podemos colocar outros elementos que caibam naquele espaço
+  </p>
+
+  <p>Um parágrafo que é block</p>
+  <p>Mais um parágrafo que é block</p>
+  <a>Um link que é inline</a>
+  <a>Mais um link que é inline</a>
+
+  <p>
+    Bom, agora temos dois problemas. Mesmo com o espaço extra os parágrafos não ficaram um do lado do outro e nossos links não tiveram alterações em suas larguras.
+    <br>
+    <br>
+    Selecionando a tag &ltp&gt com nosso inspetor conseguimos ver que ela realmente está ocupando 30% do espaço da tela do navegador, mas agora tem alguma coisa a mais que não colocamos no CSS.
+    <br>
+    <br>
+    <strong>Margin</strong>. Existe uma margin ocupando o restante do espaço que era ocupado pela tag &ltp&gt. Utilizando a propriedade <code>margin-right: 0px</code>; não parece fazer efeito. Mas está tudo bem! Esse é o comportamento esperado de um elemento block.
+    <br>
+    <br>
+    Vamos ver agora o que aconteceu com nossos links. Nossos links parecem ter ignorado completamente a propriedade de largura que colocamos. Mais uma vez, está tudo bem! Esse é o comportamento padrão de um elemento inline . Diferente de um elemento block , um elemento inline não recebe propriedades de tamanho ( <code>width e height</code> ) e isso pode gerar alguns problemas com estilização. Foi criado então o <code>display: inline-block</code> que permite usar o melhor dos dois mundos.
+  </p>
+
+  <p>Um parágrafo que é block</p>
+  <p>Mais um parágrafo que é block</p>
+  <a>Um link que é inline</a>
+  <a>Mais um link que é inline</a>
+
+  <h3>Em Resumo então dos displays:</h3>
+
+  <ul>
+    <li>display: block</li>
+    <ul>
+      <li>O elemento ocupa toda a largura disponível</li>
+      <li>Se diminuir o tamanho desse elemento o espaço restante será ocupado por uma <code>margin</code> não removível</li>
+    </ul>
+  </ul>
+
+  <ul>
+    <li>display: inline</li>
+    <ul>
+      <li>Permite que outro elemento fique do seu lado caso haja espaço</li>
+      <li>O elemento ocupa apenas o espaço para mostrar seu conteúdo</li>
+      <li>Não recebe propriedades de tamanho</li>
+    </ul>
+  </ul>
+
+  <ul>
+    <li>display: inline-block</li>
+    <ul>
+      <li>Permite que outro elemento fique do seu lado caso haja espaço</li>
+      <li>O elemento inicialmente ocupa apenas o espaço para mostar seu conteúdo</li>
+      <li>Recebe propriedade de tamanho</li>
+    </ul>
+  </ul>
+
+  <h3>Quando devo usar <code>inline</code> ou <code>inline-block</code>?</h3>
+  <p>
+    O ideal é nunca limitar nossas opções quando vamos escolher uma propriedade. Se o único propósito de mudarmos o display de um elemento é para deixá-lo um do lado do outro, vamos usar <code>inline-block</code>. Se por algum motivo houver necessidade de mudar o tamanho desse elemento, já estamos com o <code>display</code> correto e não precisaremos mudá-lo de novo
+  </p>
+</body>
+</html>

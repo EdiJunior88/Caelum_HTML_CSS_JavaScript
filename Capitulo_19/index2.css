@@ -1,0 +1,62 @@
+p:nth-child(3) {
+  background-color: blue;
+}
+
+p:nth-child(6) {
+  background-color: blue;
+}
+
+p:nth-child(7) {
+  background-color: blue;
+}
+
+a {
+  background-color: red;
+}
+
+p:nth-child(11) {
+  background-color: blue;
+  width: 30%;
+
+}
+p:nth-child(12) {
+  background-color: blue;
+  width: 30%;
+}
+
+a:nth-child(13) {
+  background-color: red;
+  width: 60%;
+}
+
+a:nth-child(14) {
+  background-color: red;
+  width: 60%;
+}
+
+p:nth-child(16) {
+  background-color: blue;
+  width: 30%;
+}
+
+p:nth-child(17) {
+  background-color: blue;
+  width: 30%;
+}
+
+a:nth-child(18) {
+  background-color: red;
+  width: 40%;
+  display: inline-block;
+}
+
+a:nth-child(19) {
+  background-color: red;
+  width: 40%;
+  display: inline-block;
+}
+
+h3 {
+  background-color: rgba(166, 247, 119, 0.267);
+  padding: 10px 10px 10px 0px;
+}
