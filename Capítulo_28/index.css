@@ -1,0 +1,10 @@
+h2 {
+  background-color: rgba(119, 136, 153, 0.274);
+}
+
+.pre-fundo-verde {
+  background-color: lightgreen;
+  width: 80%;
+  height: 0%;
+  padding: 0;
+}
