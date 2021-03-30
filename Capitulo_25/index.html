@@ -125,6 +125,37 @@
       </pre>
     </div>
 
+    Isso faz com que a tela seja considerada com largura de 370px, fazendo com que nosso layout mobile finalmente funcione e nossas media queries também.
+
+    Melhor ainda, podemos colocar o viewport com o valor device-width definido pelo fabricante, dando mais flexibilidade com dispositivos diferentes com tamanhos diferentes:
+
+    <div>
+      <pre class="pre-menor3">
+        <code>
+          &ltmeta&gt name="viewport" content="width=device-width"&gt
+        </code>
+      </pre>
+    </div>
+  </p>
+
+  <h2>Responsive Web Desigin</h2>
+  <p>
+    Pequenas mudanças que fazemos usando @media tentando fazer a experiência do usuário em diversos dispositivos mais atraente é o que o mercado chama de <strong>Web Design Responsivo</strong>. <br><br>
+
+    São 3 os elementos de um design responsivo: <br>
+
+    <ul>
+      <li>Layout fluído usando medidas flexíveis, como porcentagens;</li>
+      <li>media queries para ajustes de design;</li>
+      <li>uso de imagens flexíveis.</li>
+    </ul>
+  </p>
+
+  <h2>Mobile-First</h2>
+  <p>
+    É muito mais comum e recomendado o uso da prática inversa: o <strong>Mobile-first</strong>. Isto é, começar o desenvolvimento pelo mobile e, depois, adicionar suporte a layouts desktop. No código, não há nenhum segredo: vamos apenas usar mais media queries <strong>min-width</strong> ao invés de <strong>max-width</strong>, mais comum em códigos desktop-first. <br><br>
+    
+    A grande mudança do mobile-first é que ela permite uma abordagem muito mais simples e evolutiva. Inicia-se o desenvolvimento pela área mais simples e limitada, com mais restrições, o mobile. O uso da tela pequena vai nos forçar a criar páginas mais simples, focadas e objetivas. Depois, a adaptação pra Desktop com <i>media queries</i>, é apenas uma questão de readaptar o layout
   </p>
 </body>
 </html>
