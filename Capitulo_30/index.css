@@ -20,3 +20,7 @@ h2 {
   padding: 20px;
   width: 45%;
 }
+
+mark {
+  background-color: rgb(234, 255, 50);
+}
