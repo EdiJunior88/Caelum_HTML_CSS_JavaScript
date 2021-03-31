@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="../Capitulo_30/index.css">
+  <title>Estilizando o Header da Home</title>
+</head>
+<body>
+  <h1>Estilizando o Header da Home</h1>
+  <h2>CSS Reset</h2>
+  <p>
+    Quando não especificamos nenhum estilo para nossos elementos do HTML, o navegador utiliza uma série de estilos padrão, que são diferentes em cada um dos navegadores. Em um momento mais avançado dos nossos projetos, poderemos enfrentar problemas com coisas que não tínhamos previsto; por exemplo, o espaçamento entre caracteres utilizado em determinado navegador pode fazer com que um texto que, pela nossa definição deveria aparecer em 4 linhas, apareça com 5, quebrando todo o nosso layout. <br><br>
+
+    Para evitar esse tipo de interferência, alguns desenvolvedores e empresas criaram alguns estilos que chamamos de <strong>CSS Reset</strong>. A intenção é setar (definir) um valor básico para todas as características do CSS, sobrescrevendo totalmente os estilos padrão do navegador. <br><br>
+
+    Existem algumas opções para resetar os valores do CSS. Algumas que merecem destaque hoje são as seguintes:
+  </p>
+
+  <h3>HTML5 Boilerplate</h3>
+  <p>
+    O HTML5 Boilerplate é um projeto que pretende fornecer um excelente ponto de partida para quem pretende desenvolver um novo projeto com HTML5. Uma série de técnicas para aumentar a compatibilidade da nova tecnologia com navegadores um pouco mais antigos estão presentes e o código é totalmente gratuito. <br><br>
+
+    <a href="https://html5boilerplate.com/">https://html5boilerplate.com/</a>
+  </p>
+
+  <h3>YUI3 CSS Reset</h3>
+  <p>
+    Criado pelos desenvolvedores front-end do Yahoo!, uma das referências na área, esse CSS Reset é composto de 3 arquivos distintos. O primeiro deles, chamado de <strong>Reset</strong>, simplesmente muda todos os valores possíveis para um valor padrão, onde até mesmo as tags <code>&lth1&gt</code> e <code>&ltsmall&gt</code> passam a ser exibidas com o mesmo tamanho. <br><br>
+     
+    <a href="https://clarle.github.io/yui3/yui/docs/cssreset/">https://clarle.github.io/yui3/yui/docs/cssreset/</a>
+  </p>
+
+  <h3>Eric Neyer CSS Reset</h3>
+  <p>
+    Há também o famoso CSS Reset de Eric Meyer, que pode ser obtido em <a href="https://meyerweb.com/eric/tools/css/reset/">https://meyerweb.com/eric/tools/css/reset/</a>. É apenas um arquivo com tamanho bem reduzido.
+  </p>
+
+  <h2>Fontes Próprias</h2>
+  <p>
+    É comum que páginas na web tenham tipografias que combinem com a sua estética e linguagem visual, também para a facilidade de leitura. Só que nem sempre os usuários possuem as fontes que queremos usar em nossas páginas. Uma maneira super comum e fácil é usar o Google Fonts. Basta entrar no site <a href="https://fonts.google.com/">https://fonts.google.com/</a>, escolher uma tipografia e depois escolher como importar a fonte.
+
+    <div class="div-css">
+        <code>
+          &ltlink href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet"&gt
+        </code>
+    </div>
+   </p>
+
+    <p>
+      O ideal é fazer essa importação antes de qualquer arquivo CSS para garantir que todos os arquivos depois vão conseguir utilizar essa fonte. <br><br>
+     
+      A outra maneira de importar é fazendo um <strong><i>@import</i></strong> no próprio arquivo CSS que você vai usar a fonte:
+
+<!-- Parte do código está fora de Sintaxe porque a tag <pre> formata utilizando os espaços exatamante da forma como foi escrito -->
+<div>
+<pre class="pre-css">
+<code>@import url('https://fonts.googleapis.com/css?family=Roboto&display=swap');
+
+body {
+  font-family: 'Roboto', sans-serif;
+}</code>
+</pre>
+</div>
+
+    </p>
+
+</body>
+</html>
