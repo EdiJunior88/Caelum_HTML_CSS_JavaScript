@@ -30,7 +30,6 @@
    <br>
    <br>
    <br>
-   <br>
 
    Parece que obtemos um resultado um pouco diferente do esperado, não? Apesar de ser capaz de exibir texto puro em sua área principal, algumas regras devem ser seguidas caso desejemos que esse texto seja exibido com alguma formatação, para facilitar a leitura pelo usuário final.
    
@@ -38,7 +37,6 @@
    <br>
       
    Uma nota de atenção é que a imagem acima foi tirada dos navegadores: Microsoft Edge e Microsoft Internet Explorer 11. Veja o que acontece quando obtemos a mesma imagem porém com navegadores mais atuais:
-  </p>
 
   <img src="../IMG/Capitulo_03/img03.PNG">
 
@@ -66,5 +64,68 @@
   <code>Não exibem quebras de linha.</code>
   <br>
   Para que possamos exibir as informações desejadas com a formatação, é necessário que cada trecho de texto tenha uma marcação indicando qual é o significado dele.
+
+  <br>
+  <br>
+
+  <img src="../IMG/Capitulo_03/img04.PNG">
+
+  <br>
+  <br>
+  
+  O texto com as devidas marcações, comumente chamado de "código". Reproduza então o código anterior em um novo arquivo de texto puro e salve-o como <strong>index-2.html</strong>
+
+  <br>
+  <br>
+
+  <img src="../IMG/Capitulo_03/img05.jpeg">
+
+  <br>
+  <br>
+  <br>
+
+  Agora, uma página muito mais agradável e legível é exibida. Para isso, tivemos que adicionar as marcações que são pertencentes ao HTML. Essas marcações são chamadas de <strong>tags</strong>, e elas basicamente dão uma <strong>representação</strong> ao texto contido entre sua abertura e fechamento.
+
+  <br>
+  <br>
+
+  O HTML (Hypertext Markup Language) ou linguagem de marcação de hipertexto foi desenvolvido para suprir a necessidade exibição de documentos científicos fornecidos por uma rede de Internet. Para termos uma comparação, é como se a Web fosse desenvolvida para exibir monografias redigidas e formatadas pela Metodologia do Trabalho Científico da ABNT.
+</p>
+
+<h3>Sintaxe do HTML</h3>
+<p>
+  O HTML é um conjunto de tags responsáveis pela marcação do conteúdo de uma página no navegador. No código que vimos antes, as tags são os elementos a mais que escrevemos usando a sintaxe <code>&ltnomedatag&gt</code>.
+
+  <br>
+  <br>
+
+  No código de antes, vimos por exemplo o uso da tag <code>&lth1&gt</code>. Ela representa o título principal da página.
+
+  <br>
+  <br>
+
+  <img src="../IMG/Capitulo_03/img06.PNG" alt="">
+
+  <br>
+  <br>
+
+  Note a sintaxe. Uma tag é definida com caracteres <code>&lt e &gt</code>, e seu nome (<strong>h1</strong> no caso). Nesse caso, para determinar onde o conteúdo acaba, usamos uma tag de fechamento com a barra antes do nome: <code>&lt/h1&gt</code>
+
+  <br>
+  <br>
+
+  Algumas tags podem receber algum tipo de informação extra dentro de sua definição chamada de <strong>atributo</strong>. São parâmetros usando a sintaxe de <code>atributo="valor"</code>. Para definir uma imagem, por exemplo, usamos a tag <code>&ltimg&gt</code> e, para indicar o caminho que está essa imagem, usamos o atributo src:
+
+  <br>
+  <br>
+
+  <img src="../IMG/Capitulo_03/img07.PNG">
+
+  <br>
+  <br>
+
+  Repare que a tag <code>img</code> não possui conteúdo por si só, e sim ela carrega ali o conteúdo de um arquivo externo (a imagem). Nesses casos, <strong>não</strong> é necessário usar uma tag de fechamento como antes no <code>h1</code>.
+</p>
+
 </body>
 </html>
