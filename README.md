@@ -1,6 +1,12 @@
 <h1>Caelum</h1>
 <h2>Apostila HTML / CSS / JavaScript</h2>
 
+<hr/>
+
+Site do Projeto (em construção) - https://edijunior88.github.io/Caelum_HTML_CSS_JavaScript/
+
+<hr/>
+
 <p>
 Esta apostila da Caelum visa ensinar de uma maneira elegante, mostrando apenas o que é necessário e quando é necessário, 
 no momento certo, poupando o leitor de assuntos que não costumam ser de seu interesse em determinadas fases do aprendizado.
