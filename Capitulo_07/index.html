@@ -199,6 +199,107 @@
     <br>
 
     Nesse caso, o navegador verificará se a fonte "Helvetica" está disponível e a utilizará para exibir os textos de todos os elementos do nosso documento que, por cascata, herdarão essa propriedade do elemento <code>body</code>.
+
+    <br>
+    <br>
+
+    Caso a fonte "Helvetica" não esteja disponível, o navegador verificará a disponibilidade da próxima fonte declarada, no nosso exemplo a "Lucida Grande". Caso o navegador não encontre também essa fonte, ele solicita qualquer fonte que pertença à família "sans-serif", declarada logo a seguir, e a utiliza para exibir o texto, não importa qual seja ela.
+
+    <br>
+    <br>
+
+    Alinhamento e decoração de texto
+    
+    <br>
+
+    Já vimos uma série de propriedades e subpropriedades que determinam o tipo e estilo da fonte. Vamos conhecer algumas maneiras de alterarmos as disposições dos textos.
+    
+    <br>
+    <br>
+    
+    No exemplo a seguir vamos mudar o alinhamento do texto com a propriedade <code>text-align</code>.
+
+    <br>
+    <br>
+
+    <img src="../IMG/Capitulo_07/img12.PNG">
+
+    <br>
+    <br>
+
+    O exemplo determina que todos os parágrafos da nossa página tenham o texto alinhado para a direita. Também é possível determinar que um elemento tenha seu conteúdo alinhado ao centro ao definirmos o valor <code>center</code> para a propriedade <code>text-align</code>, ou então definir que o texto deve ocupar toda a largura do elemento aumentando o espaçamento entre as palavras com o valor <code>justify</code>. Por padrão o texto é alinhado à esquerda, com o valor <code>left</code>, porém é importante lembrar que essa propriedade propaga-se em cascata.
+    
+    <br>
+    <br>
+    
+    É possível configurar também uma série de espaçamentos de texto com o CSS:
+
+    <br>
+    <br>
+
+    <img src="../IMG/Capitulo_07/img13.PNG">
+
+    <br>
+    <br>
+
+    Imagem de fundo
+    
+    <br>
+
+    A propriedade <code>background-image</code> permite indicar um arquivo de imagem para ser exibido ao fundo do elemento. Por exemplo:
+
+    <br>
+    <br>
+
+    <img src="../IMG/Capitulo_07/img14.PNG">
+
+    <br>
+    <br>
+
+    Com essa declaração, o navegador vai requisitar um arquivo <code>sobre-background.jpg</code>, que deve estar na mesma pasta do arquivo CSS onde consta essa declaração. Mas podemos também passar um endereço da web para pegar imagens remotamente:
+
+    <br>
+    <br>
+
+    <img src="../IMG/Capitulo_07/img15.PNG">
+
+    <br>
+    <br>
+
+    Bordas
+    
+    <br>
+
+    As propriedades do CSS para definirmos as <strong>bordas</strong> de um elemento nos apresentam uma série de opções. Podemos, para cada borda de um elemento, determinar sua cor, seu estilo de exibição e sua largura. Por exemplo:
+
+    <br>
+    <br>
+    <img src="../IMG/Capitulo_07/img16.PNG">
+
+    <br>
+    <br>
+
+    A propriedade <code>border</code> tem uma forma resumida para escrever os mesmos estilos que adicionamos acima, mas de uma maneira mais simples:
+
+    <br>
+    <br>
+
+    <img src="../IMG/Capitulo_07/img17.PNG">
+
+    <br>
+    <br>
+
+    Para que o efeito da cor sobre a borda surta efeito, é necessário que a propriedade <code>border-style</code> tenha qualquer valor diferente do padrão none.
+    
+    <br>
+    <br>
+    
+    Podemos também falar em qual dos lados do nosso elemento queremos a borda usando a subpropriedade que indica lado:
+
+    <br>
+    <br>
+
+    <img src="../IMG/Capitulo_07/img18.PNG">
   </p>
 </body>
 </html>
