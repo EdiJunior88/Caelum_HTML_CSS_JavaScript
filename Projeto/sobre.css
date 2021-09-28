@@ -1,0 +1,18 @@
+body {
+  font-family: "Helvetica", "Lucida Grande", sans-serif;
+  color: #3d3d3d;
+}
+
+h1 {
+  background-color: #e1edf2;
+}
+
+h2 {
+  border-bottom: 2px solid black;
+}
+
+figure {
+  text-align: center;
+  background-color: whitesmoke;
+  border: 1px solid lightgrey;
+}
