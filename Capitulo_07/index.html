@@ -29,7 +29,7 @@
     <br>
     <br>
 
-    Além da tag &ltfont&gt, várias outras tags de estilo existiam. Mas isso é passado. Hoje em dia <strong>tags HTML para estilo são má prática</strong> e jamais devem ser usadas, são interpretadas apenas para o modo de compatibilidade.
+    Além da tag <code>&ltfont&gt</code>, várias outras tags de estilo existiam. Mas isso é passado. Hoje em dia <strong>tags HTML para estilo são má prática</strong> e jamais devem ser usadas, são interpretadas apenas para o modo de compatibilidade.
 
     <br>
     <br>
@@ -62,7 +62,143 @@
     
     <br>
 
-    A primeira delas é com o atributo style no próprio elemento:
+    A primeira delas é com o atributo <code>style</code> no próprio elemento:
+
+    <br>
+    <br>
+
+    <img src="../IMG/Capitulo_07/img03.PNG">
+
+    <br>
+    <br>
+
+    Mas tínhamos acabado de discutir que uma das grandes vantagens do CSS era manter as regras de estilo fora do HTML. Usando esse atributo <code>style</code> não parece que fizemos isso.
+
+    <br>
+    <br>
+
+    A tag style
+    
+    <br>
+    
+    A outra maneira de se utilizar o CSS é declarando suas propriedades dentro de uma tag <code>&ltstyle&gt</code>.
+
+    <br>
+    <br>
+
+    Como estamos declarando as propriedades visuais de um elemento em outro lugar do nosso documento, precisamos indicar de alguma maneira a qual elemento nos referimos. Fazemos isso utilizando um <strong>seletor CSS</strong>. É basicamente uma forma de buscar certos elementos dentro da página que receberão as regras visuais que queremos.
+    
+    <br>
+    <br>
+    
+    No exemplo a seguir, usaremos o seletor que pega todas as tags p e altera sua cor e background:
+
+    <br>
+    <br>
+
+    <img src="../IMG/Capitulo_07/img04.PNG">
+
+    <br>
+    <br>
+
+    O código dentro da tag <code>&ltstyle&gt</code> indica que estamos alterando a cor e o fundo de todos os elementos com tag <code>p</code>. Dizemos que selecionamos esses elementos pelo nome de sua tag, e aplicamos certas propriedades CSS apenas neles.
+
+    <br>
+    <br>
+
+    Revisando então a estrutura de uso do CSS:
+
+    <br>
+    <br>
+
+    <img src="../IMG/Capitulo_07/img05.PNG">
+
+    <br>
+    <br>
+
+    Algumas propriedades contém "subpropriedades" que modificam uma parte específica daquela propriedade que vamos trabalhar, sendo sua sintaxe:
+
+    <br>
+    <br>
+
+    <img src="../IMG/Capitulo_07/img06.PNG">
+
+    <br>
+    <br>
+
+    No exemplo abaixo, em ambos os casos, trabalhamos com a propriedade <code>text</code>, que estiliza a aparência do texto do seletor informado. Podemos especificar quais propriedades específicas do texto queremos modificar, no caso <code>text-align</code> o alinhamento do texto, e com <code>text-decoration</code> colocamos o efeito de sublinhado.
+
+    <br>
+    <br>
+
+    <img src="../IMG/Capitulo_07/img07.PNG">
+
+    <br>
+    <br>
+
+    Arquivo externo
+    
+    <br>
+
+    A terceira maneira de declararmos os estilos do nosso documento é com um arquivo externo com a extensão <code>.css</code>. Para que seja possível declarar nosso CSS em um arquivo à parte, precisamos indicar em nosso documento HTML uma ligação entre ele e a folha de estilo (arquivo com a extensão <code>.css</code>).
+
+    <br>
+    <br>
+
+    A indicação de uso de uma folha de estilos externa deve ser feita dentro da tag <code>&lthead&gt</code> de um documento HTML:
+
+    <br>
+    <br>
+
+    <img src="../IMG/Capitulo_07/img08.PNG">
+
+    <br>
+    <br>
+
+    E dentro do arquivo <code>estilos.css</code> colocamos apenas o conteúdo do CSS:
+
+    <br>
+    <br>
+
+    <img src="../IMG/Capitulo_07/img09.PNG">
+
+    <br>
+    <br>
+
+    Propriedades tipográficas e fontes
+    
+    <br>
+
+    Da mesma maneira que alteramos cores, podemos alterar o texto. Podemos definir fontes com o uso da propriedade <code>font-family</code>.
+    
+    <br>
+
+    A propriedade <code>font-family</code> pode receber seu valor com ou sem aspas dependendo da sua composição, por exemplo, quando uma fonte tem o nome separado por espaço.
+
+    <br>
+    <br>
+
+    <img src="../IMG/Capitulo_07/img10.PNG">
+
+    <br>
+    <br>
+
+    É possível, e muito comum, declararmos o nome de algumas fontes que gostaríamos de verificar se existem no computador, permitindo que tenhamos um controle melhor da forma como nosso texto será exibido.
+    
+    <br>
+    <br>
+    
+    Em nosso projeto, as fontes não têm ornamentos, vamos declarar essa propriedade para todo o documento por meio do seu elemento <code>body</code>:
+
+    <br>
+    <br>
+
+    <img src="../IMG/Capitulo_07/img11.PNG">
+
+    <br>
+    <br>
+
+    Nesse caso, o navegador verificará se a fonte "Helvetica" está disponível e a utilizará para exibir os textos de todos os elementos do nosso documento que, por cascata, herdarão essa propriedade do elemento <code>body</code>.
   </p>
 </body>
 </html>
