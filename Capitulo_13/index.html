@@ -135,6 +135,65 @@
     <br>
 
     <img src="../IMG/Capitulo_13/img09.png">
+
+    <br>
+    <br>
+
+    Mas isso dá muito trabalho e estamos repetindo código. Ao invés de colocar essa propriedade em cada um dos elementos textuais da nossa página, podemos colocar no elemento superior a estas tags, neste caso é o elemento <code>&ltbody&gt</code>.
+
+    <br>
+    <br>
+
+    <img src="../IMG/Capitulo_13/img10.png">
+
+    <br>
+    <br>
+
+    No exemplo acima todos os elementos filhos da tag <code>&ltbody&gt</code> vão receber a propriedade <code>font-family</code>: e isso é o que nós chamamos de <strong>herança</strong>. Herança acontece quando elementos herdam propriedades dos elementos acima deles (elementos pai).
+
+    <br>
+    <br>
+
+    Para saber mais: o valor inherit
+    
+    <br>
+
+    Imagine que temos a seguinte divisão com uma imagem:
+
+    <br>
+    <br>
+
+    <img src="../IMG/Capitulo_13/img11.png">
+
+    <br>
+    <br>
+
+    Queremos que a imagem preencha todo o espaço da <code>&ltdiv&gt</code>, mas as propriedades <code>width</code> e <code>height</code> não são aplicadas em cascata, sendo assim, somos obrigados a definir o tamanho da imagem manualmente:
+
+    <br>
+    <br>
+
+    <img src="../IMG/Capitulo_13/img12.png">
+
+    <br>
+    <br>
+
+    Esta não é uma solução sustentável, porque, caso alterarmos o tamanho da <code>&ltdiv&gt</code>, teremos que lembrar de alterar também o tamanho da imagem. Uma forma de resolver este problema é utilizando o valor inherit para as propriedades <code>width</code> e <code>height</code> da imagem:
+
+    <br>
+    <br>
+
+    <img src="../IMG/Capitulo_13/img13.png">
+
+    <br>
+    <br>
+
+    O valor <code>inherit</code> indica para o elemento filho que ele deve utilizar o mesmo valor presente no elemento pai, sendo assim, toda vez que o tamanho do elemento pai for alterado, automaticamente o elemento filho herdará o novo valor, facilitando assim, a manutenção do código.
+
+    <br>
+    <br>
+    
+    Lembre-se de que o <code>inherit</code> também afeta propriedades que não são aplicadas em cascata.
   </p>
 </body>
 </html>
