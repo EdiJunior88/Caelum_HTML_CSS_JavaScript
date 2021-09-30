@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Desacoplamento com Classes</title>
+</head>
+<body>
+  <h1>DESACOPLAMENTO COM CLASSES</h1>
+  <p>
+    Muitas vezes quando estamos declarando os estilos de uma página HTML, achamos mais fácil usar o seletor de nome da tag ao invés de usar classes. Porém isto pode causar problemas imprevistos se não usado com cautela. Vamos analisar o seguinte código para entender a situação:
+
+    <br>
+    <br>
+
+    <img src="../IMG/Capitulo_15/img.png">
+
+    <br>
+    <br>
+
+    No exemplo acima adicionamos estilo nas tags <code>&lth2&gt</code> para ter um tamanho de fonte maior, uma fonte mais grossa e uma borda abaixo para fazer o efeito de linha divisória. Até aqui tudo certo. Mas agora vamos colocar um outro título na página chamada "Sobre a MusicDot" e esse título tem relevância maior do que os dois outros títulos que temos (História e Diferenciais), portanto vamos ter que modificar suas tags para uma de menos importância:
+
+    <br>
+    <br>
+
+    <img src="../IMG/Capitulo_15/img02.png">
+
+    <br>
+    <br>
+
+    Agora com essa mudança da estrutura do HTML o nosso CSS está alterando um elemento que não é o que nós inicialmente queríamos mudar. Vamos ter que fazer a mudança no CSS para usar as nossas alterações no elemento certo.
+
+    <br>
+    <br>
+
+    Por isso o ideal é declarar estilos com classes ao invés de nomes de tags. Uma dica pra dar nome às classes é elas representarem o papel que estas tags estão exercendo em conjunto com os estilos declarados, no nosso caso, estamos declarando um conjunto de estilo para subtítulos.
+    
+    <br>
+    <br>
+
+    Veja como fica o resultado do desacoplamento do conjunto de estilos do nome da tag, para ser agora com classes:
+
+    <br>
+    <br>
+
+    <img src="../IMG/Capitulo_15/img03.png">
+
+    <br>
+    <br>
+
+    Usando classes, podemos alterar toda a estrutura HTML sem nos preocupar se estas alterações afetarão a estilização que fizemos no começo.
+  </p>
+</body>
+</html>
