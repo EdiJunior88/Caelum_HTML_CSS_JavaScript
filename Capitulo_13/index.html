@@ -42,6 +42,99 @@
     <br>
 
     <img src="../IMG/Capitulo_13/img03.png">
+
+    <br>
+    <br>
+
+    Só que não é recomendado o uso de <code>id</code> para a estilização de elementos já que a idéia do atributo é para fazer uma referência única na página como fizemos na parte dos links. Quando queremos estilizar elementos específicos é melhor utilizar o atributo <code>class=""</code>. O comportamento no CSS será idêntico ao do atributo <code>id=""</code>, mas <code>class</code> foi feito para ser usado no CSS e no JavaScript.
+
+    <br>
+    <br>
+
+    Arrumando o exemplo anterior, usando classes:
+
+    <br>
+    <br>
+
+    <img src="../IMG/Capitulo_13/img04.png">
+    
+    <br>
+    <br>
+
+    <code>Grau de especificidade de um seletor</code>
+
+    <br>
+  
+    Existe uma coisa muito importante no CSS que precisamos tomar cuidado é o <strong>grau de especificidade</strong> de um seletor. Isto é, a prioridade de interpretação de um seletor pelo navegador. Para entender estas regras de especificidade de um selector, ao criarmos um seletor de tag a sua pontuação se torna <strong>1</strong>. Quando usamos um seletor de classe sua pontuação se torna <strong>10</strong>. Quando usamos um seletor de id sua pontuação se torna <strong>100</strong>. Ao fim, o navegador soma a pontuação dos seletores aplicados à um elemento, e as propriedades com o seletor de maior pontuação são as que valem.
+
+    <br>
+    <br>
+
+    <img src="../IMG/Capitulo_13/img05.png">
+
+    <br>
+    <br>
+
+    No exemplo acima o parágrafo vai ficar com a cor rosa porque o seletor que tem a cor rosa é o seletor de maior pontuação.
+
+    <br>
+    <br>
+
+    Quando elementos possuem a mesma pontuação quem prevalece é a propriedade do último seletor:
+
+    <br>
+    <br>
+
+    <img src="../IMG/Capitulo_13/img06.png">
+
+    <br>
+    <br>
+
+    No exemplo acima a cor do parágrafo será vermelha.
+
+    <br>
+    <br>
+
+    Podemos também somar os pontos para deixar nosso seletor mais forte:
+
+    <br>
+    <br>
+
+    <img src="../IMG/Capitulo_13/img07.png">
+
+    <br>
+    <br>
+
+    No exemplo acima nós deixamos nosso seletor mais específico para os <code>&ltp&gt</code> que estão dentro de uma tag <code>&ltbody&gt</code>, portanto a cor do parágrafo será marrom.
+
+    <br>
+    <br>
+
+    <code>Herança</code>
+    
+    <br>
+    
+    A cascata do CSS, significa justamente a possibilidade de elementos filhos herdarem características de estilização de elementos superiores, estas definidas por suas propriedades, que podem ou não passar aos seus descendentes seus valores.
+
+    <br>
+    <br>
+
+    Vamos ver o exemplo de código a seguir:
+    
+    <br>
+    <br>
+
+    <img src="../IMG/Capitulo_13/img08.png">
+
+    <br>
+    <br>
+
+    Vamos mudar a família da fonte de toda a página. Uma maneira que podemos fazer é selecionar todas as tags que contém text (<code>&ltp&gt</code>, <code>&lta&gt</code> e <code>&ltfigcaption&gt</code>) e colocar a família de fonte que queremos:
+
+    <br>
+    <br>
+
+    <img src="../IMG/Capitulo_13/img09.png">
   </p>
 </body>
 </html>
