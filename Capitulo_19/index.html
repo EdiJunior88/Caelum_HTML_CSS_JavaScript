@@ -24,6 +24,71 @@
     <br>
     <br>
 
+    <img src="../IMG/Capitulo_19/img02.png">
+
+    <br>
+    <br>
+
+    Da maneira que montamos a estrutura acima fica bem fácil saber o que estamos estilizando no CSS. Veja a diferença:
+
+    <br>
+    <br>
+
+    <img src="../IMG/Capitulo_19/img03.png">
+
+    <br>
+    <br>
+
+    Tipos de display
+    
+    <br>
+    
+    Existem 2 tipos de display que caracterizam a exibição padrão da maior parte dos elementos HTML: <code>display: block</code> e <code> display: inline.</code> A maneira mais fácil de ver a diferença entre eles é usando as tags que possuem essas propriedades por padrão, <code>&ltp&gt</code> e <code>&lta&gt</code> respectivamente, e colocar uma cor de fundo.
+
+    <br>
+    <br>
+
+    <img src="../IMG/Capitulo_19/img04.png">
+
+    <br>
+    <br>
+
+    Veja o espaço que esses elementos realmente ocupam. A tag <code>&ltp&gt</code> ocupa toda a largura da página enquanto a tag <code>&lta&gt</code> ocupa apenas o espaço necessário para mostrar o texto que colocamos. Vamos colocar mais elementos no nosso exemplo acima.
+
+    <br>
+    <br>
+
+    <img src="../IMG/Capitulo_19/img05.png">
+
+    <br>
+    <br>
+
+    Podemos observar que agora um parágrafo ficou um embaixo do outro e os links ficaram um do lado do outro. Esses comportamentos são os esperados de elementos block e inline. Como um elemento block ocupa toda a largura da tela não podemos colocar outro elemento do lado porque não há espaço. Agora como no inline o elemento ocupa só o espaço necessário para mostrar nosso texto então podemos colocar outros elementos que caibam naquele espaço. Bom, vamos então resolver o problema de espaço da tag <code>&ltp&gt</code>:
+
+    <br>
+    <br>
+
+    <img src="../IMG/Capitulo_19/img06.png">
+
+    <br>
+    <br>
+
+    Bom, agora temos dois problemas. Mesmo com o espaço extra os parágrafos não ficaram um do lado do outro e nossos links não tiveram alterações em suas larguras. Vamos usar o inspetor de elementos de nosso navegador para ver o que está acontecendo com esses elementos.
+
+    <br>
+    <br>
+
+    Selecionando a tag <code>&ltp&gt</code> com nosso inspetor conseguimos ver que ela realmente está ocupando <code>30%</code> do espaço da tela do navegador, mas agora tem alguma coisa a mais que não colocamos no CSS. <strong>Margin</strong>. Existe uma <code>margin</code> ocupando o restante do espaço que era ocupado pela tag <code>&ltp&gt</code>. Utilizando a propriedade <code>margin-right: 0px</code>; não parece fazer efeito. Mas está tudo bem! Esse é o comportamento esperado de um elemento <code>block</code>.
+    
+    <br>
+    <br>
+    
+    Vamos ver agora o que aconteceu com nossos links. Nossos links parecem ter ignorado completamente a propriedade de largura que colocamos. Mais uma vez, está tudo bem! Esse é o comportamento padrão de um elemento <code>inline</code>. Diferente de um elemento <code>block</code>, um elemento <code>inline</code> não recebe propriedades de tamanho (<code>width</code> e <code>height</code>) e isso pode gerar alguns problemas com estilização. Foi criado então o <code>display: inline-block</code> que permite usar o melhor dos dois mundos. Vamos usar o exemplo acima novamente só que mudando o tipo de display do link:
+
+    <br>
+    <br>
+
+    <img src="../IMG/Capitulo_19/img07.png">
   </p>
 </body>
 </html>
