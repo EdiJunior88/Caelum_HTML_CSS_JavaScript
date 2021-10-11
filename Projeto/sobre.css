@@ -70,3 +70,17 @@ figure img {
 .contato__info-descricao {
   margin-left: 10px;
 }
+
+.rodape {
+  padding: 1.75em 0;
+  font-size: 1.1rem;
+}
+
+.rodape__logo {
+  width: 6em;
+}
+
+.rodape__copyright {
+  display: inline;
+  margin-left: 1em;
+}
