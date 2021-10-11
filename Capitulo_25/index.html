@@ -81,8 +81,126 @@
 
     <br>
     <br>
-    
+
     Em vez de simplesmente falar que determinado CSS é para handheld em geral, nós podemos agora indicar que determinadas regras do CSS devem ser vinculadas a propriedades do dispositivo como tamanho da tela, orientação (landscape ou portrait) e até resolução em dpi.
+
+    <br>
+    <br>
+
+    <img src="../IMG/Capitulo_24/img04.png">
+
+    <br>
+    <br>
+
+    Outra forma de declarar os media types é separar as regras dentro do mesmo arquivo CSS:
+
+    <br>
+    <br>
+
+    <img src="../IMG/Capitulo_24/img05.png">
+
+    <br>
+    <br>
+
+    Repare como o atributo media agora pode receber expressões complexas. No caso, estamos indicando que queremos que as telas com largura máxima de 480px tenham uma fonte de 12px.
+
+    <br>
+    <br>
+
+    Viewport
+
+    <br>
+
+    Mas, se você tentar rodar nosso exemplo anterior em um iPhone ou Android de verdade, verá que ainda estamos vendo a versão Desktop da página. A regra do max-width parece ser ignorada!
+
+    <br>
+    <br>
+
+    Na verdade, a questão é que os smartphones modernos têm telas grandes e resoluções altas, justamente para nos permitir ver sites complexos feitos para Desktop. A tela de um iPhone SE por exemplo é 1280px por 720px. Celulares Android já chegam a 4K.
+
+    <br>
+    <br>
+
+    Ainda assim, a experiência desses celulares é bem diferente dos Desktops. 4K em uma tela de 4 polegadas é bem diferente de 4K em um notebook de 16 polegadas. A resolução muda. Celulares costumam ter uma resolução em dpi bem maior que Desktops.
+
+    <br>
+    <br>
+
+    Como arrumar nossa página?
+
+    <br>
+    <br>
+
+    A Apple criou então uma solução que depois foi copiada pelos outros smartphones, que é configurar o valor que julgarmos mais adequado para o viewport:
+
+    <br>
+    <br>
+
+    <img src="../IMG/Capitulo_24/img06.png">
+
+    <br>
+    <br>
+
+    Isso faz com que a tela seja considerada com largura de 370px, fazendo com que nosso layout mobile finalmente funcione e nossas media queries também.
+
+    <br>
+    <br>
+
+    Melhor ainda, podemos colocar o viewport com o valor <code>device-width</code> definido pelo fabricante, dando mais flexibilidade com dispositivos diferentes com tamanhos diferentes:
+
+    <br>
+    <br>
+
+    <img src="../IMG/Capitulo_24/img07.png">
+
+    <br>
+    <br>
+
+    Responsive Web Design
+
+    <br>
+
+    Pequenas mudanças que fazemos usando <code>@media</code> tentando fazer a experiência do usuário em diversos dispositivos mais atraente é o que o mercado chama de <strong>Web Design Responsivo</strong>. O termo surgiu num famoso artigo de Ethan Marcotte e diz o seguinte:
+
+    <br>
+    <br>
+
+    São 3 os elementos de um design responsivo:
+
+    <br>
+    <br>
+
+    layout fluído usando medidas flexíveis, como porcentagens;
+    <br>    
+    media queries para ajustes de design;
+    <br>
+    uso de imagens flexíveis.
+    <br>
+    A ideia do responsivo é que a página se <strong>adapte a diferentes condições,</strong> em especial a diferentes resoluções. E, embora o uso de porcentagens exista há décadas na Web, foi a popularização das media queries que permitiram layouts verdadeiramente adaptativos.
+
+    <br>
+    <br>
+
+    Mobile-first
+
+    <br>
+
+    Nossos exercícios seguiram o processo que chamamos de desktop-first. Isso significa que tínhamos nossa página montada para o layout Desktop e, num segundo momento, precisaremos codar a adaptação a mobile.
+
+    <br>
+    <br>
+
+    Na prática, isso não é muito interessante porque precisamos <strong>desfazer</strong> algumas coisas do que tínhamos feito no nosso layout para desktop: tiramos alguns posicionamentos e desfizemos diversos ajustes na largura de elementos que já eram padrões deles.
+
+    <br>
+    <br>
+
+    É muito mais comum e recomendado o uso da prática inversa: o <strong>Mobile-first</strong>. Isto é, começar o desenvolvimento pelo mobile e, depois, adicionar suporte a layouts desktop. No código, não há nenhum segredo: vamos apenas usar mais media queries <strong>min-width</strong> ao invés de <strong>max-width</strong>, mais comum em códigos desktop-first.
+
+    <br>
+    <br>
+
+    A grande mudança do mobile-first é que ela permite uma abordagem muito mais simples e evolutiva. Inicia-se o desenvolvimento pela área mais simples e limitada, com mais restrições, o mobile. O uso da tela pequena vai nos forçar a criar páginas mais simples, focadas e objetivas. Depois, a adaptação pra Desktop com media queries, é apenas uma questão de readaptar o layout.
   </p>
 </body>
 </html>
