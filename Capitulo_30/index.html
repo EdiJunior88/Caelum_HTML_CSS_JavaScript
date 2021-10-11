@@ -95,6 +95,77 @@
     <br>
 
     <img src="../IMG/Capitulo_30/img03.png">
+
+    <br>
+    <br>
+
+    Modularizando Componentes com CSS Isolados
+    <br>
+    Durante o desenvolvimento do projeto, principalmente na parte de planejamento, definimos diversas seções que vão englobar os diversos conteúdos de nossa página que podem ou não se repetir em outras páginas de nosso site. Podemos lidar com a situação de diversas maneiras:
+
+    <br>
+    <br>
+
+    CSS Geral com CSS Específico da Página
+    <br>
+    A abordagem de criar um CSS geral com um CSS específico da página é bem conhecida e muito utilizada no mercado. A idéia é criar um CSS que vai conter estilos que podem se repetir em diversas páginas, como por exemplo, tipografia, cores, tamanhos e até alguns componentes, e depois criar um CSS que vai conter estilos específicos daquela página. Como tudo na vida, existem vantagens e desvantagens dessa abordagem.
+
+    <br>
+    <br>
+
+    Vantagens:
+
+    <br>
+    <br>
+
+    Só é necessário a importação de um arquivo CSS para que a página já tenha um estilo padrão.
+    <br>
+    Como todas as classes de estilos estão em um lugar só, podemos escrever o html já colocando os nomes de classes que precisamos. Quase como um framework.
+
+    <br>
+    <br>
+
+    Desvantagens:
+
+    <br>
+    <br>
+
+    Todas as páginas terão de carregar um arquivo de estilos gigantesco independete se vão usar todas as classes ou não, o que pode impactar performance.
+    <br>
+    Dependendo do tamanho do arquivo geral pode ser muito complexo encontrar seletores que queremos usar.
+    <br>
+    Se por algum motivo queremos usar algo que era para ser exclusivo de uma página em outra página, teremos de fazer a "portabilidade" para o arquivo geral o que pode bagunçar o arquivo geral.
+    <br>
+    Manutenção pode ser complexo dependendo do tamanho do arquivo.
+    
+    <br>
+    <br>
+
+    Um CSS Para Cada Componente Da Página
+    <br>
+    Essa abordagem também é bastante utilizada no mercado só que ela é mais utilizada em projetos com o uso de frameworks (React, Angular) e pré processadores de CSS (SASS). Nessa abordagem cada seção ou componente da página tem um CSS exclusivo.
+
+    <br>
+    <br>
+
+    Vantagens:
+
+    <br>
+    <br>
+
+    Como cada componente tem seu próprio CSS só é necessário importar os componentes que precisamos usar em cada página, evitando importar estilos desnecessários.
+    <br>
+    Organização e manutenção fica menos complicada porque é mais claro saber exatamente qual arquivo trabalhar.
+    
+    <br>
+    <br>
+
+    Desvantagens:
+
+    <br>
+    <br>
+    
+    Precisamos importar um arquivo CSS diferente para cada componente que queremos usar que pode gerar linhas de imports gigantescas.
   </p>
 </body>
 </html>
