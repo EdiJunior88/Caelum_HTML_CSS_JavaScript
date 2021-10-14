@@ -14,6 +14,9 @@
 }
 
 .cabecalho__menu {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
   background-color: #272b3a87;
 }
 
