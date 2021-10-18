@@ -17,6 +17,7 @@
   display: flex;
   justify-content: space-evenly;
   flex-wrap: wrap;
+  align-items: center;
   background-color: #272b3a87;
 }
 
