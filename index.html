@@ -9,6 +9,7 @@
   <link rel="stylesheet" href="reset.css">
   <link rel="stylesheet" href="cabecalho.css">
   <link rel="stylesheet" href="rodape.css">
+  <link rel="stylesheet" href="form-newsletter.css">
   <title>MusicDot</title>
 </head>
 <body>
@@ -96,6 +97,20 @@
           <li class="rodape__item-lista"><a href="#">Contato</a></li>
         </ul>
       </nav>
+    </section>
+
+    <section class="rodape__secao">
+      <h2 class="rodape__titulo">Receba Novidades e Lançamentos</h2>
+
+      <form action="#" method="get" class="form-newsletter">
+        <label for="form-newsletter__label" class="form-newsletter__label">
+          Seu email pessoal
+        </label>
+        <input id="email-newsletter" name="email-newsletter" type="email" class="form-newsletter__campo">
+        <button type="submit" class="form-newsletter__botao">
+          OK
+        </button>
+      </form>
     </section>
   </footer>
 </body>
