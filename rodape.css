@@ -18,10 +18,6 @@
   line-height: 1.5;
 }
 
-.rodape__secao + .rodape__secao {
-  margin-top: 2em;
-}
-
 .rodape__lista-midias-sociais {
   display: flex;
   justify-content: center;
@@ -48,4 +44,46 @@
 .rodape__item-lista {
   font-weight: 500;
   margin: 0.625em 0;
+}
+
+@media (max-width: 640px) {
+  .rodape__secao + .rodape__secao {
+    margin-top: 2em;
+  }
+}
+
+@media (min-width: 640px) {
+  .rodape {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    font-size: 1rem;
+  }
+
+  .rodape__secao--sobre,
+  .rodape__secao--cursos,
+  .rodape__secao--links,
+  .rodape__secao--newsletter {
+    width: 45%;
+  }
+
+  .rodape__secao--cursos {
+    order: 1;
+    margin: 0;
+  }
+
+  .rodape__secao--links {
+    order: 2;
+    margin: 0;
+  }
+
+  .rodape__secao--sobre {
+    order: 3;
+    margin-top: 2em;
+  }
+
+  .rodape__secao--newsletter {
+    order: 4;
+    margin-top: 2em;
+  }
 }
