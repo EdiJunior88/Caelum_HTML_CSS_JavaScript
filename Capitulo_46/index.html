@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Display: Grid</title>
+</head>
+<body>
+  <h1>DISPLAY: GRID</h1>
+  <p>
+    Mais uma propriedade de posicionamento de elementos! A propriedade <code>display: flex</code> já nos proporcionou grandes vantagens em relação às maneiras que costumávamos manipular posicionamento de elementos, só que encontramos uma certa complicação quando precisamos posicionar elementos de forma bidimensional. <code>Flex</code> é uma ótima ferramenta para quando temos elementos que precisam ser distribuídos de maneira igual e com uma direção bem definida.
+
+    <br>
+    <br>
+
+    <img src="">
+
+    <br>
+    <br>
+
+    No exemplo mostrado acima o <code>display: flex</code> funciona perfeitamente porque a distribuição é unidirecional, mesmo que exista uma segunda linha por conta do <code>flex-wrap</code>. Mas agora se vamos fazer algo como:
+    
+    <br>
+    <br>
+
+    <code>display: flex</code> por conta não consegue lidar o posicionamento bidimensional. Precisamos modificar a estrutura para que os elementos ocupem o espaço de uma linha:
+
+    <br>
+    <br>
+
+    <img src="">
+
+    <br>
+    <br>
+
+    Vamos entender o que aconteceu. Como o <code>flex</code> só consegue trabalhar com uma direção, então vamos criar a primeira linha contendo apenas dois elementos: o <strong>bloco verde</strong> e uma <strong>caixa vazia</strong>. Nessa caixa vazia, vamos criar nossa segunda linha (deixar a caixa como um <code>flex container</code>) com os 4 blocos vermelhos dentro e vamos limitar o tamanho dessa caixa para que o espaço seja melhor dividido. Já conseguimos perceber com esse exemplo simples que o código já começou a ficar muito complicado. Imagine fazer layouts mais complexos usando essa técnica do <code>diplay: flex</code>. Por conta dessa dificuldade de fazer layouts com uma complexidade bidimensional que surgiu o <code>display: grid</code>.
+
+    <br>
+    <br>
+
+    A idéia do <code>grid</code> é exatamente de não precisar mudar a estrutura do <strong>HTML</strong> e que toda a parte de posicionamento de layout fique apenas no <strong>CSS</strong>.
+
+    <br>
+    <br>
+
+    Quando colocamos a propriedade <code>display: grid</code> em um elemento ele se transforma em um grid container da mesma forma que um elemento se torna flex container quando recebe a propriedade <code>display: flex</code>. Depois que definimos um grid container precisamos definir sua estrutura. Por padrão um grid container coloca cada item em uma linha e todos eles ficam em uma coluna:
+
+    <br>
+    <br>
+
+    <img src="">
+
+    <br>
+    <br>
+
+    Nós sabemos que nós precisamos de 3 colunas e 2 linhas para conseguir o efeito que queremos. Então vamos usar as propriedades de grid container que vão definir o número de colunas e o número de linhas respectivamente: <code>grid-template-columns:</code> e <code>grid-template-rows</code>. A propriedade de <code>grid</code> permite que nós usemos outra unidade de medida: <code>fr</code> (que significa fraction/ fração).
+
+    <br>
+    <br>
+
+    grid-template-columns
+    <br>
+    Podemos colocar infinitos valores dentro dessa propriedade, mas cada valor dentro dessa propriedade vai representar <strong>uma</strong> coluna. Queremos 3 colunas que ocupem igualmente o espaço da página. Vamos usar a nova unidade de medida <code>fr</code>.
+
+    <br>
+    <br>
+
+    <img src="">
+
+    <br>
+    <br>
+
+    No código acima, quando escrevemos <code>1fr 1fr 1fr</code> estamos dizendo que queremos <strong>3</strong> colunas que ocupem 1 fração do espaço disponível, ou seja, cada coluna vai ter 1/3 do espaço disponível lateralmente.
+
+    <br>
+    <br>
+
+    grid-template-rows
+    <br>
+    A propriedade que cria as linhas funciona da mesma maneira que a propriedade que cria colunas. Portanto se queremos duas linhas que ocupam o mesmo espaço:
+
+    <br>
+    <br>
+
+    <img src="">
+
+    <br>
+    <br>
+
+    Só que mesmo depois de ter colocado as duas linhas ainda assim os elementos não ficaram dispostos corretamente. O elemento verde ainda ocupa apenas uma linha e não duas, então precisamos indicar para o navegador:
+
+    <br>
+    <br>
+
+    <img src="">
+
+    <br>
+    <br>
+
+    A propriedade <code>grid-row</code> é usada apenas nos elementos filhos de um <code>grid container</code> e ela recebe dois valores: linha de início e linha de término. No nosso exemplo usamos o valor <code>span</code> que diz que queremos mesclar linhas e o <code>2</code> a quantidade de linhas que vamos mesclar. Quando usamos o span o próximo valor vai ser a quantidade de linhas ou colunas que vamos mesclar, portanto não indicamos qual linha é a linha de término. Quando não colocamos o valor de término o navegador coloca automaticamente <code>span 1</code> que quer dizer "ocupe apenas 1 linha/coluna".
+
+    <br>
+    <br>
+
+    Agora sim nosso bloco verde está na posição correta em relação aos elementos vermelhos. Usado <code>grid</code> nós não precisamos mudar a estrutura HTML para conseguir o efeito que queríamos no começo e o código ficou muito mais simples de entender também.
+
+    <br>
+    <br>
+
+    Vamos dificultar um pouco nosso exemplo. Vamos trocar a posição do bloco verde para a direita. Vamos usar a propriedade <code>grid-columns</code> para dizer onde que queremos que nosso bloco verde comece e termine, mas apenas colocar essa propriedade no bloco verde não vai ser o suficiênte, precisamos colocar essa propriedade também nos blocos vermelhos e isso já começa a aumentar significativamente a complexidade e dificuldade de manutenção.
+
+    <br>
+    <br>
+
+    Para melhorar essa capacidade de movimentação de elementos dentro do grid, foi criado uma propriedade chamada grid-template-areas, que nomeia cada espaço do grid criado. Vamos pegar nosso layout normal e tentar nomear baseado no que já temos:
+
+    <br>
+    <br>
+
+    <img src="">
+
+    <br>
+    <br>
+
+    Então no exemplo acima na primeira linha (o primeiro conjunto de aspas): <code>primeiro espaço: bloco verde, segundo espaço: bloco vermelho, terceiro espaço: bloco vermelho;</code> segunda linha (o segundo conjunto de aspas): <code>primeiro espaço: bloco verde, segundo espaço: bloco vermelho, terceiro espaço: bloco vermelho.</code> Agora só precisamos dizer quem é o bloco vermelho e quem é o bloco verde:
+
+    <br>
+    <br>
+    
+    <img src="">
+
+    <br>
+    <br>
+
+    Antes de colocar nome nos outros blocos, vamos nomear apenas o bloco verde e depois testar. Podemos observar que os elementos continuaram na mesma posição. Agora vamos mudar a posição do bloco verde:
+
+    <br>
+    <br>
+    
+  </p>
+</body>
+</html>
