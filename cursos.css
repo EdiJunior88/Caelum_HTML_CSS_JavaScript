@@ -1,0 +1,75 @@
+.--largura-maxima {
+  width: 100%;
+}
+
+.--largura-grande {
+  width: 80%;
+}
+
+.botao {
+  font-size: .8rem;
+  font-weight: 500;
+  letter-spacing: 2.9px;
+  text-transform: uppercase;
+  padding: 1rem 40px;
+  margin-top: .5rem;
+  margin-bottom: .5rem;
+  border-radius: 6px;
+  transition: .25s;
+}
+
+.botao:hover {
+  transform: translate(0, .22rem);
+  transition: .25s;
+}
+
+.cursos {
+  color: #fff;
+  text-align: center;
+  background-image: url(./wd43-musicdot-arquivos-iniciais/img/home-background-mobile.png);
+  background-size: cover;
+  padding-top: 9.5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.cursos__chamada {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.chamada__titulo {
+  color: #e93d50;
+  font-weight: 700;
+  font-size: 1.2rem;
+  margin-bottom: .3rem;
+}
+
+.chamada__titulo--destaque {
+  color: #fff;
+}
+
+.chamada p {
+  font-weight: 500;
+  line-height: 1.3;
+  margin: 1rem 0;
+}
+
+.chamada__cursos__matricula {
+  color: #fff;
+  background-color: #e93d50;
+}
+
+.cursos__lista {
+  font-size: .7rem;
+  font-weight: 600;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  display: grid;
+  grid-template-columns: 7rem 7rem;
+  grid-template-rows: repeat(5, 4.5rem);
+  grid-gap: .5rem;
+  text-align: center;
+}
