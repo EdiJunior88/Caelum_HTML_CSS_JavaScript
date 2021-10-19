@@ -4,8 +4,8 @@
   font-weight: bold;
   text-transform: uppercase;
   letter-spacing: 0.23em;
+  color: white;
   background-color: #2d5377;
-  color: #fff;
 }
 
 .cabecalho__logo {
@@ -15,8 +15,9 @@
 
 .cabecalho__menu {
   display: flex;
-  justify-content: center;
+  justify-content: space-evenly;
   flex-wrap: wrap;
+  align-items: center;
   background-color: #272b3a87;
 }
 
@@ -43,5 +44,26 @@
 
   .cabecalho__menu {
     background-color: transparent;
+  }
+}
+
+@media (min-width: 770px) {
+  .cabecalho__item-menu--matricular {
+    margin-left: 1.42em;
+    border-radius: 6px;
+    background-color: #e93d50;
+  }
+
+  .cabecalho__item-menu--matricular a {
+    padding: 1.8em 3.5em;
+    display: flex;
+    align-items: center;
+  }
+}
+
+@media (min-width: 1066px) {
+  .cabecalho {
+    padding-left: calc((100% - 960px) / 2);
+    padding-right: calc((100% - 960px) / 2);
   }
 }
