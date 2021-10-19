@@ -12,6 +12,10 @@
   justify-content: center;
 }
 
+.rodape__item-midias-sociais {
+  width: 2.62em;
+}
+
 .rodape__item-midias-sociais img {
   width: 100%;
 }
