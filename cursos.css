@@ -193,6 +193,38 @@
   }
 
   .chamada__titulo {
-    
+    font-size: 2.5rem;
+  }
+
+  .cursos__lista {
+    grid-template-columns: repeat(6, 9.3rem);
+    grid-template-rows: 7.5rem 7.5rem;
+    margin-top: 1.5rem;
+    margin-bottom: 1.5rem;
+  }
+
+  .cursos__lista li {
+    background-repeat: no-repeat;
+    background-size: 3rem 3rem;
+    background-position: top 1rem center;
+    padding-top: 2.5rem;
+  }
+
+  .cursos__lista .curso--destaque2 {
+    order: -1;
+    grid-area: 1/4/span 2/5;
+    padding-top: 6rem;
+    background-size: 6rem 6rem;
+    background-position: top 3.6rem center;
+  }
+
+  .cursos__lista p {
+    font-size: .9rem;
+  }
+
+  .curso--destaque2 .imagem-destaque2 {
+    width: 6rem;
+    height: 6rem;
+    margin-bottom: .8rem;
   }
 }
