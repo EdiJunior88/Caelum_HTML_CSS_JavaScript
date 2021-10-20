@@ -50,7 +50,7 @@
   background-image: url("./wd43-musicdot-arquivos-iniciais/img/simbolo-musidot-dark.svg");
 }
 
-.planos__titulo {
+.plano__titulo {
   margin: 8px 0;
 }
 
@@ -60,7 +60,7 @@
   letter-spacing: 1.5px;
 }
 
-.planos__titulo, .planos__titulo + p {
+.plano__titulo, .plano__titulo + p {
   font-size: 1rem;
   font-weight: 500;
 }
@@ -92,5 +92,30 @@
 }
 
 .plano--destaque {
-  
+  color: #f76148;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 1.1px;
+  width: 8rem;
+  padding: .4rem 0 .8rem;
+  border-radius: 5px;
+  box-shadow: 0 0 .8rem .05rem rgba(0, 0, 0, .2);
+  position: absolute;
+  transform: translate(-50%, -65%);
+  z-index: 1;
+}
+
+.card--anual p + p, .card--semestral p + p {
+  margin-bottom: 1rem;
+}
+
+.planos > p {
+  width: 250px;
+  font-size: .6rem;
+  font-weight: 600;
+  line-height: 18px;
+}
+
+.planos a {
+  font-weight: 700;
 }
