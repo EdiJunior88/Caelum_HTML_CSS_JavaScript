@@ -119,3 +119,74 @@
 .planos a {
   font-weight: 700;
 }
+
+@media (min-width: 768px) {
+  .planos {
+    grid-template-columns: 20rem 20rem;
+    grid-template-areas: 
+    "header header"
+    "card1 card2"
+    "footer footer";
+    gap: 1rem;
+    justify-content: center;
+    padding-bottom: 2rem;
+    background-image: url("./wd43-musicdot-arquivos-iniciais/img/planos-background.png");
+    background-size: cover;
+  }
+
+  .plano__titulo {
+    grid-area: header;
+  }
+
+  .cards__planoanual {
+    grid: card2;
+  }
+
+  .card--semestral {
+    grid-area: card2;
+  }
+
+  .planos__pagamentos {
+    grid-column-end: span 2;
+  }
+
+  .planos--maisassinado {
+    font-size: .8rem;
+  }
+
+  .planos__card {
+    padding:  6rem 2rem 2rem;
+    justify-content: space-between;
+    background-size: 2.5rem;
+    background-position: top 2.5rem center;
+  }
+
+  .planos__card img {
+    width: 2.5rem;
+  }
+
+  .plano__titulo, .plano__titulo + p {
+    font-size: 1.4rem;
+    font-weight: 500;
+  }
+
+  .valor--destaque {
+    font-size: 2.6rem;
+    font-weight: 700;
+  }
+
+  .plano--destaque {
+    font-size: .6rem;
+  }
+
+  .cards__botao {
+    font-size: 1.1rem;
+    transition: .25s;
+  }
+
+  .planos > p {
+    font-size: .9rem;
+    font-weight: 600;
+    line-height: 18px;
+  }
+}
