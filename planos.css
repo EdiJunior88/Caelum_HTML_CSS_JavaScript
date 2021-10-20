@@ -190,3 +190,15 @@
     line-height: 18px;
   }
 }
+
+@media (min-width: 1200px) {
+  .plano__titulo {
+    font-size: 1.2rem;
+  }
+
+  .plano--destaque {
+    font-size: .9rem;
+    width: 10rem;
+    transform: translate(-50%, -75%);
+  }
+}
