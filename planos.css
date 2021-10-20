@@ -77,4 +77,20 @@
 .cards__botao {
   color: #f76148;
   text-transform: uppercase;
+  letter-spacing: 1.8px;
+  font-weight: 600;
+  border-radius: 8px;
+  margin-top: .8rem;
+  padding: 1rem 2rem;
+  background-color: #fff;
+  box-shadow: 0 0 .8rem .1rem rgba(0, 0, 0, .2);
+}
+
+.card--anual {
+  position: relative;
+  z-index: 2;
+}
+
+.plano--destaque {
+  
 }
