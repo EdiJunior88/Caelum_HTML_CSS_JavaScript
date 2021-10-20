@@ -1,4 +1,8 @@
 .cabecalho {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  box-sizing: border-box;
   text-align: center;
   font-size: 0.6rem;
   font-weight: bold;
