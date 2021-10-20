@@ -228,3 +228,15 @@
     margin-bottom: .8rem;
   }
 }
+
+@media (min-width: 1400px) {
+  .cursos__lista {
+    grid-template-columns: repeat(6, 13rem);
+  }
+
+  .cursos__lista img {
+    width: 3rem;
+    height: 3rem;
+    margin-bottom: 10px;
+  }
+}
