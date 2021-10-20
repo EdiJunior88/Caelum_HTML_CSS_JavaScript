@@ -134,16 +134,16 @@
     background-size: cover;
   }
 
-  .plano__titulo {
+  .planos__titulo {
     grid-area: header;
   }
 
   .cards__planoanual {
-    grid: card2;
+    grid-area: card2;
   }
 
   .card--semestral {
-    grid-area: card2;
+    grid-area: card1;
   }
 
   .planos__pagamentos {
@@ -155,7 +155,7 @@
   }
 
   .planos__card {
-    padding:  6rem 2rem 2rem;
+    padding: 6rem 2rem 2rem;
     justify-content: space-between;
     background-size: 2.5rem;
     background-position: top 2.5rem center;
@@ -192,7 +192,7 @@
 }
 
 @media (min-width: 1200px) {
-  .plano__titulo {
+  .planos__titulo {
     font-size: 1.2rem;
   }
 
