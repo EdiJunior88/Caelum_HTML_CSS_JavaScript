@@ -1,3 +1,80 @@
 .planos {
-  
+  background-image: url("./wd43-musicdot-arquivos-iniciais/img/planos-background-mobile.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  text-align: center;
+  padding-top: 15px;
+  padding-bottom: 1.8rem;
+  display: grid;
+  justify-items: center;
+  position: relative;
+}
+
+.planos::before {
+  content: "";
+  width: 81%;
+  height: .1rem;
+  background-color: #e93d50;
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translate(-50%, 0);
+}
+
+.planos__titulo {
+  font-size: .85rem;
+  font-weight: 700;
+  margin-bottom: 2rem;
+}
+
+.planos__card {
+  background-color: #f76148;
+  border-radius: 8px;
+  margin-bottom: 1.3rem;
+  color: #fff;
+  padding: 4rem 1rem 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  box-shadow: 0 0 .8rem .1rem rgba(0,0,0,.2);
+  background-repeat: no-repeat;
+  background-size: 1.7rem;
+  background-position: top 1.5rem center;
+}
+
+.card--anual {
+  background-image: url("./wd43-musicdot-arquivos-iniciais/img/simbolo-musidot-branco.svg");
+}
+
+.card--semestral {
+  background-image: url("./wd43-musicdot-arquivos-iniciais/img/simbolo-musidot-dark.svg");
+}
+
+.planos__titulo {
+  margin: 8px 0;
+}
+
+.planos__card p + p {
+  font-weight: 300;
+  margin-top: .2rem;
+  letter-spacing: 1.5px;
+}
+
+.planos__titulo, .planos__titulo + p {
+  font-size: 1rem;
+  font-weight: 500;
+}
+
+.valor--destaque {
+  font-size: 2rem;
+  font-weight: 700;
+}
+
+.planos__card span {
+  font-weight: 500;
+}
+
+.cards__botao {
+  color: #f76148;
+  text-transform: uppercase;
 }
