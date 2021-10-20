@@ -94,6 +94,10 @@
   transition: .25s;
 }
 
+.curso--tecladopiano {
+  background-image: url("./wd43-musicdot-arquivos-iniciais/img/icone-teclado-piano.svg");
+}
+
 .curso--violaoguitarra {
   background-image: url("./wd43-musicdot-arquivos-iniciais/img/icones-violao-guitarra.svg");
 }
@@ -130,3 +134,65 @@
   background-image: url("./wd43-musicdot-arquivos-iniciais/img/icone-cordas.svg");
 }
 
+.cursos__lista img {
+  width: 2rem;
+  height: 2rem;
+  margin-bottom: 5px;
+}
+
+@media (min-width: 768px) {
+  .cursos {
+    padding: 6rem 5% 0;
+    background-image: url("./wd43-musicdot-arquivos-iniciais/img/home-background.png");
+  }
+
+  .cursos__chamada {
+    width: 300px;
+    align-items: flex-start;
+    align-self: flex-start;
+    text-align: left;
+  }
+
+  .chamada__titulo {
+    font-size: 2rem;
+  }
+
+  .chamada__cursos__matricula {
+    display: none;
+  }
+
+  .cursos__lista {
+    grid-template-columns: repeat(5, 7rem);
+    grid-template-rows: 5.5rem 5.5rem 5.5rem;
+    gap: .8rem;
+  }
+
+  .cursos__lista li {
+    background-repeat: no-repeat;
+    background-size: 2rem 2rem;
+    background-position: top 1rem center;
+    padding-top: 2.5rem;
+  }
+
+  .cursos__lista .curso--destaque {
+    order: -1;
+    grid-area: 1/1/span 3/3;
+    padding-top: 5.5rem;
+    background-size: 6rem 6rem;
+    background-position: top 3.6rem center;
+  }
+}
+
+@media (min-width: 1200px) {
+  .cursos {
+    padding: 7rem 10% 0;
+  }
+
+  .cursos__chamada {
+    width: 450px;
+  }
+
+  .chamada__titulo {
+    
+  }
+}
