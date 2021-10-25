@@ -38,12 +38,26 @@
 }
 
 .canal__texto {
+  font-size: .6rem;
+  letter-spacing: .8px;
+  line-height: 12px;
+  margin-bottom: 1rem;
+}
+
+.canal__button {
   color: #fff;
   background-color: #e93d50;
 }
 
 .video__descricao {
   width: 85%;
+}
+
+.descricao__titulo {
+  font-size: .9rem;
+  font-weight: 500;
+  line-height: 15px;
+  margin-bottom: .5rem;
 }
 
 .descricao__titulo::before {
@@ -56,6 +70,14 @@
   margin: 1.2rem auto 1rem;
 }
 
+.chamada__youtube--video1 {
+  background-image: url("./wd43-musicdot-arquivos-iniciais/img/videos-thumbnail-video1.png");
+}
+
+.chamada__youtube--video2 {
+  background-image: url("./wd43-musicdot-arquivos-iniciais/img/videos-thumbnail-video2.png");
+}
+
 .chamada__youtube--video1, .chamada__youtube--video2 {
   background-size: cover;
   width: 100%;
@@ -64,7 +86,9 @@
 @media (min-width: 768px) {
   .chamada__youtube {
     grid-template-columns: 1fr 1fr;
-    grid-template-areas: "chamada chamada" "video1 video2";
+    grid-template-areas: 
+    "chamada chamada" 
+    "video1 video2";
   }
 
   .youtube__informacao {
@@ -92,5 +116,41 @@
 
   .descricao__texto {
     font-size: .8rem;
+  }
+}
+
+@media (min-width: 1200px) {
+  .youtube__informacao {
+    padding: 4rem 20%;
+  }
+
+  .icone--youtube::before {
+    width: 6rem;
+    height: 6rem;
+  }
+
+  .canal__titulo {
+    font-size: 2rem;
+    margin-bottom: .4rem;
+  }
+
+  .canal__texto {
+    font-size: 1rem;
+    line-height: 1rem;
+  }
+
+  .video__descricao {
+    width: 75%;
+    text-align: left;
+  }
+
+  .descricao__titulo {
+    font-size: 1.2rem;
+    line-height: 1.4rem;
+    margin-bottom: 1.5rem;
+  }
+
+  .descricao__texto {
+    font-size: .9rem;
   }
 }
