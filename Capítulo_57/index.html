@@ -77,6 +77,163 @@
     Variáveis
     <br>
     Para armazenarmos um valor para uso posterior, podemos criar uma <strong>variável</strong>:
+
+    <br>
+    <br>
+
+    <img src="">
+
+    <br>
+    <br>
+
+    No exemplo acima, guardamos o resultado de <code>102 / 17</code> na variável <code>resultado</code>. O resultado de criar uma variável é sempre <strong>undefined</strong>. Para obter o valor que guardamos nela ou mudar o seu valor, podemos fazer o seguinte:
+
+    <br>
+    <br>
+
+    <img src="">
+
+    <br>
+    <br>
+
+    Também podemos alterar o valor de uma variável usando as operações básicas com uma sintaxe bem compacta:
+
+    <br>
+    <br>
+
+    <img src="">
+
+    <br>
+    <br>
+
+    Number
+    <br>
+    Com esse tipo de dados é possível executar todas as operações que vimos anteriormente:
+
+    <br>
+    <br>
+
+    <img src="">
+
+    <br>
+    <br>
+
+    String
+    <br>
+    Não são apenas números que podemos salvar numa variável. O JavaScript tem vários tipos de dados. Uma string em JavaScript é utilizada para armazenar trechos de texto:
+
+    <br>
+    <br>
+
+    <img src="">
+
+    <br>
+    <br>
+
+    Para exibirmos o valor da variável empresa fora do console, podemos executar o seguinte comando:
+
+    <br>
+    <br>
+
+    <img src="">
+
+    <br>
+    <br>
+
+    O comando <code>alert</code> serve para criação de <strong>popups</strong> com algum <strong>conteúdo de texto</strong> que colocarmos dentro dos parênteses. O que acontece com o seguinte código?
+
+    <br>
+    <br>
+    
+    <img src="">
+
+    <br>
+    <br>
+
+    O número 30 é exibido sem problemas dentro do <strong>popup</strong>. O que acontece é que qualquer variável pode ser usada no <code>alert</code>. O JavaScript não irá diferenciar o tipo de dados que está armazenado numa variável, e se necessário, tentará converter o dado para o tipo desejado.
+
+    <br>
+    <br>
+
+    Automatic semicolon insertion (ASI)
+    <br>
+    É possível omitir o ponto e vírgula no final de cada declaração. A omissão de ponto e vírgula funciona no JavaScript devido ao mecanismo chamado automatic semicolon insertion (ASI).
+
+    <br>
+    <br>
+
+    A tag script
+    <br>
+    O console nos permite testar códigos diretamente no navegador. Porém, não podemos pedir aos usuários do site que sempre abram o console, copiem um código e colem para ele ser executado.
+
+    <br>
+    <br>
+
+    Para inserirmos um código JavaScript em uma página, é necessário utilizar a tag <code>&ltscript&gt</code>:
+
+    <br>
+    <br>
+
+    <img src="">
+
+    <br>
+    <br>
+
+    A tag <code>&ltscript&gt</code> pode ser declarada dentro da tag <code>&lthead&gt</code> assim como na tag <code>&ltbody&gt</code>, mas devemos ficar atentos, porque o código é lido imediatamente dentro do navegador. Veja a consequência disso nos dois exemplos abaixo:
+
+    <br>
+    <br>
+
+    <img src="">
+
+    <br>
+    <br>
+
+    Repare que, ao ser executado, o script trava o processamento da página. Imagine um script que demore um pouco mais para ser executado ou que exija alguma interação do usuário como uma confirmação. Não seria interessante carregar a página toda primeiro antes de sua execução por uma questão de performance e experiência para o usuário?
+
+    <br>
+    <br>
+
+    Para fazer isso, basta removermos o script do <code>&lthead&gt</code>, colocando-o no final do <code>&ltbody&gt</code>:
+
+    <br>
+    <br>
+
+    <img src="">
+
+    <br>
+    <br>
+
+    Devemos sempre colocar o script antes de fecharmos a tag <code>&ltbody&gt</code>? Na maioria esmagadora das vezes sim.
+
+    <br>
+    <br>
+
+    JavaScript em arquivo externo
+    <br>
+    Se o mesmo script for utilizado em outra página, como fazemos? Imagine ter que reescrever o script toda vez que ele for necessário. Para não acontecer isso, é possível importar scripts dentro da página utilizando também a tag <code>&ltscript&gt</code>:
+
+    <br>
+    <br>
+
+    <img src="">
+
+    <br>
+    <br>
+
+    Com a separação do script em arquivo externo é possível reaproveitar alguma funcionalidade em mais de uma página.
+
+    <br>
+    <br>
+
+    Mensagens no console
+    <br>
+    É comum querermos dar uma olhada no valor de alguma varíavel ou resultado de alguma operação durante a execução do código. Nesses casos, poderíamos usar um alert. Porém, se esse conteúdo deveria somente ser mostrado para o desenvolvedor, o console do navegador pode ser utilizado no lugar do alert para imprimir essa mensagem:
+
+    <br>
+    <br>
+
+    <img src="">
   </p>
 </body>
 </html>
