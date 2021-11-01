@@ -234,6 +234,112 @@
     <br>
 
     <img src="">
+
+    <br>
+    <br>
+
+    DOM: sua página no mundo JavaScript
+    <br>
+    Para permitir alterações na página, ao carregar o HTML da página, os navegadores carregam em memória uma estrutura de dados que representa cada uma das nossas tags no JavaScript. Essa estrutura é chamada de DOM (<strong>D</strong>ocument <strong>O</strong>bject <strong>M</strong>odel). Essa estrutura pode ser acessada através da variável global <code>document</code>.
+
+    <br>
+    <br>
+
+    O termo "documento" é frequentemente utilizado em referências à nossa página. No mundo front-end, documento e página são sinônimos.
+
+    <br>
+    <br>
+
+    querySelector
+    <br>
+    Antes de sair alterando nossa página, precisamos em primeiro lugar acessar no JavaScript o elemento que queremos alterar. Como exemplo, vamos alterar o conteúdo de um título da página. Para acessar ele:
+
+    <br>
+    <br>
+
+    <img src="">
+
+    <br>
+    <br>
+
+    Esse comando usa os <strong>seletores CSS</strong> para encontrar os elementos na página. Usamos um seletor de nome de tag mas poderíamos ter usado outros:
+
+    <br>
+    <br>
+
+    <img src="">
+
+    <br>
+    <br>
+
+    Elemento da página como variável
+    <br>
+    Se você vai utilizar várias vezes um mesmo elemento da página, é possível salvar o resultado de qualquer <code>querySelector</code> numa variável:
+
+    <br>
+    <br>
+
+    <img src="">
+
+    Executando no console, você vai perceber que o elemento correspondente é selecionado. Podemos então manipular seu conteúdo. Você pode ver o conteúdo textual dele com:
+
+    <br>
+    <br>
+
+    <img src="">
+
+    <br>
+    <br>
+
+    Essa propriedade, inclusive, pode receber valores e ser alterada:
+
+    <br>
+    <br>
+
+    <img src="">
+
+    <br>
+    <br>
+
+    querySelectorAll
+    <br>
+    As vezes você precisa selecionar vários elementos na página. Várias tags com a classe <code>.cartao</code> por exemplo. Se o retorno esperado é mais de um elemento, usamos <code>querySelectorAll</code> que devolve uma lista de elementos (array).
+    
+    <br>
+    <br>
+
+    <img src="">
+
+    Podemos então acessar elementos nessa lista através da posição dele (começando em zero) e usando o colchetes:
+
+    <br>
+    <br>
+
+    <img src="">
+
+    <br>
+    <br>
+
+    Alterações no DOM
+    <br>
+    Ao alterarmos os elementos da página, o navegador sincroniza as mudanças e alteram a aplicação em tempo real.
+
+    <br>
+    <br>
+
+    Funções e os eventos do DOM
+    <br>
+    Apesar de ser interessante a possibilidade de alterar o documento todo por meio do JavaScript, é muito comum que as alterações sejam feitas quando o usuário executa alguma ação, como por exemplo, mudar o conteúdo de um botão ao clicar nele e não quando a página carrega. Porém, por padrão, qualquer código colocado no <code>&ltscript&gt</code>, como fizemos anteriormente, é executado assim que o navegador lê ele.
+
+    <br>
+    <br>
+
+    Para guardarmos um código para ser executado em algum outro momento, por exemplo, quando o usuário clicar num botão, é necessário utilizar alguns recursos do JavaScript no navegador. Primeiro vamos criar uma <strong>função</strong>:
+
+    <br>
+    <br>
+
+    <img src="">
   </p>
 </body>
 </html>
