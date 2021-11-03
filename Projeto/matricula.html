@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" href="wd43-musicdot-arquivos-iniciais/img/favicon.ico" type="image/x-icon">
+  <link rel="stylesheet" href="wd43-musicdot-arquivos-iniciais/css/bootstrap.css">
+  <link rel="stylesheet" href="matricula.css">
+  <title>Matriculas</title>
+</head>
+<body>
+  <header class="header">
+    <nav class="navbar navbar-expand-sm navbar-dark bg-dark">
+      <a class="navbar-brand" href="index.html">
+        <img src="wd43-musicdot-arquivos-iniciais/img/musicdot-logo-light.svg" alt="Logo da MusicDot">
+      </a>
+
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item active">
+            <a class="nav-link" href="#">Cursos</a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link" href="#">Matriculas</a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link" href="#">Emails</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+
+  <main class="container mb-4">
+    <div class="jumbotron bg-dark header-matricula text-light mt-3">
+      <div class="container">
+        <h1>Escolher cursos</h1>
+        <p class="lead">
+          Escolha os cursos que gostaria de se matricular
+        </p>
+      </div>
+    </div>
+
+    <table class="table table-hover rounded-top">
+      <thead class="thead-dark">
+        <tr>
+          <th scope="col"></th>
+          <th scope="col">Curso</th>
+          <th scope="col">Tempo</th>
+        </tr>
+      </thead>
+
+      <tbody>
+        <tr>
+          <td><input onclick="adicionaCurso(this)" type="checkbox" name="curso" value="20"></td>
+          <td>Curso de Violão</td>
+          <td>20h</td>
+        </tr>
+
+        <tr>
+          <td><input onclick="adicionaCurso(this)" type="checkbox" name="curso" value="12"></td>
+          <td>Curso de Bambolê</td>
+          <td>30h</td>
+        </tr>
+
+        <tr>
+          <td><input onclick="adicionaCurso(this)" type="checkbox" name="curso" value="12"></td>
+          <td>Curso de Java</td>
+          <td>12h</td>
+        </tr>
+
+        <tr>
+          <td><input onclick="adicionaCurso(this)" type="checkbox" name="curso" value="20"></td>
+          <td>Curso de Violão</td>
+          <td>20h</td>
+        </tr>
+
+        <tr>
+          <td><input onclick="adicionaCurso(this)" type="checkbox" name="curso" value="12"></td>
+          <td>Curso de Bambolê</td>
+          <td>30h</td>
+        </tr>
+
+        <tr>
+          <td><input onclick="adicionaCurso(this)" type="checkbox" name="curso" value="12"></td>
+          <td>Curso de Java</td>
+          <td>12h</td>
+        </tr>
+
+        <tr class="bg-dark text-light">
+          <td>Total</td>
+          <td class="js-total-de-cursos">0 curso(s)</td>
+          <td class="js-total-de-horas">0h</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <button type="button" class="js-botao-matricula btn btn-outline-dark btn-lg mb-4">
+      Confirmar Matrícula
+    </button>
+  </main>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <script src="wd43-musicdot-arquivos-iniciais/js/bootstrap.js"></script>
+  <script src="matricula.js"></script>
+
+</body>
+</html>

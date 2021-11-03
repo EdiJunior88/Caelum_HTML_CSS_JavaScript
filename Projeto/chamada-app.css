@@ -1,0 +1,130 @@
+.chamada__aplicativo {
+  color: #fff;
+  text-align: center;
+  background-color: #f76148;
+  padding: 2rem 7.5%;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: auto;
+  justify-items: center;
+}
+
+.aplicativo__titulo {
+  font-size: 1.2rem;
+  font-weight: 700;
+  margin-bottom: .8rem;
+  line-height: 24px;
+  grid-column-end: span 2;
+}
+
+.aplicativo__texto {
+  line-height: 20px;
+  margin-bottom: 15px;
+  grid-column-end: span 2;
+}
+
+.texto__destaque {
+  font-weight: 600;
+}
+
+.chamada__aplicativo__button--wrapper {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.aplicativo__button {
+  color: #e93d50;
+  font-weight: 600;
+  letter-spacing: 1.6px;
+  text-transform: uppercase;
+  background-color: #fff;
+  border: none;
+  border-radius: 5px;
+  width: 5.9rem;
+  padding: 1rem 0 1rem 1rem;
+  box-sizing: border-box;
+  font-size: .5rem;
+  background-size: 1.2rem;
+  background-repeat: no-repeat;
+}
+
+.app__download--android {
+  background-image: url("./wd43-musicdot-arquivos-iniciais/img/icone-android-logo.svg");
+  background-position: left .5rem center;
+  padding-left: 1.4rem;
+}
+
+.app__download--ios {
+  background-image: url("./wd43-musicdot-arquivos-iniciais/img/icone-apple-logo.svg");
+  background-position: left 1rem top .4rem;
+}
+
+.aplicativo--icone {
+  width: 1.2rem;
+  height: 1.2rem;
+  margin-right: .2rem;
+  vertical-align: middle;
+}
+
+@media (min-width: 768px) {
+  .chamada__aplicativo {
+    background-image: url("./wd43-musicdot-arquivos-iniciais/img/mockup-app.png");
+    background-size: 12rem;
+    background-position: left 20% center;
+    background-repeat: no-repeat;
+    padding: 5rem 20%;
+    grid-template-columns: 1fr 9rem 9rem;
+    column-gap: 1rem;
+    grid-template-areas:
+    ". titulo titulo"
+    ". texto texto"
+    ". android ios";
+  }
+
+  .aplicativo__titulo {
+    font-size: 1.5rem;
+    line-height: 29px;
+    grid-area: titulo;
+  }
+
+  .aplicativo__texto {
+    line-height: 28px;
+    grid-area: texto;
+  }
+  
+  .app__download--android {
+    grid-area: android;
+    justify-self: flex-end;
+  }
+
+  .app__download--ios {
+    grid-area: ios;
+    justify-self: flex-start;
+  }
+}
+
+@media (min-width: 1200px) {
+  .chamada__aplicativo {
+    grid-template-columns: 1fr 12rem 12rem;
+  }
+
+  .aplicativo__titulo {
+    font-size: 1.8rem;
+  }
+
+  .aplicativo__button {
+    width: 9.5rem;
+    font-size: .8rem;
+    background-size: 1.8rem;
+    padding: 1.5rem 0 1.5rem 1rem;
+  }
+
+  .app__download--android {
+    background-position: left .7rem top .8rem;
+    padding-left: 1.4rem;
+  }
+
+  .app__download--ios {
+    background-position: left 1.3rem top .6rem;
+  }
+}

@@ -1,0 +1,97 @@
+.beneficios {
+  text-align: center;
+  margin-bottom: 2rem;
+  padding: 0 10%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.beneficios__titulo {
+  font-size: 1rem;
+  font-weight: 700;
+}
+
+.beneficios__lista li {
+  padding-top: 5.5rem;
+  background-repeat: no-repeat;
+  background-size: 4rem 4rem;
+  background-position: top 20px center;
+}
+
+.beneficio--paravoce {
+  background-image: url("./wd43-musicdot-arquivos-iniciais/img/icone-beneficios-tudo-para-voce.svg");
+}
+
+.beneficio--duvidas {
+  background-image: url("./wd43-musicdot-arquivos-iniciais/img/icone-beneficios-nenhuma-duvida.svg");
+}
+
+.beneficio--didatica {
+  background-image: url("./wd43-musicdot-arquivos-iniciais/img/icone-beneficios-didatica-cuidadosa.svg");
+}
+
+.beneficio--online {
+  background-image: url("./wd43-musicdot-arquivos-iniciais/img/icone-beneficios-online.svg");
+}
+
+.beneficio__titulo {
+  font-size: .8rem;
+  font-weight: 600;
+  margin-top: 1rem;
+  margin-bottom: .2rem;
+}
+
+.beneficio__texto {
+  line-height: 1rem;
+}
+
+@media (min-width:768px) {
+  .beneficios {
+    margin-bottom: 3.7rem;
+  }
+
+  .beneficios__lista {
+    display: grid;
+    grid-template-columns: 17.5rem 17.5rem;
+    gap: 1rem;
+  }
+
+  .beneficios__titulo {
+    margin-bottom: 1rem;
+  }
+
+  .beneficio__titulo {
+    font-size: 1.1rem;
+  }
+
+  .beneficio__texto {
+    font-size: .8rem;
+  }
+}
+
+@media (min-width:1200px) {
+  .beneficios__titulo {
+    font-size: 1.3rem;
+  }
+
+  .beneficios__lista {
+    gap: 1.3rem;
+    grid-template-columns: 22.5rem 22.5rem;
+  }
+
+  .beneficios__lista li {
+    padding-top: 7.25rem;
+    background-size: 6rem 6rem;
+  }
+
+  .beneficio__titulo {
+    font-size: 1.2rem;
+    margin-bottom: .6rem;
+  }
+
+  .beneficio__texto {
+    font-size: .9rem;
+    line-height: 1.2rem;
+  }
+}
