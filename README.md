@@ -3,7 +3,7 @@
 
 <hr/>
 
-Site do Projeto (em construção) - https://edijunior88.github.io/Caelum_HTML_CSS_JavaScript/
+Site do Projeto - https://edijunior88.github.io/Caelum_HTML_CSS_JavaScript/
 
 <hr/>
 
@@ -89,4 +89,5 @@ previamente.
 <hr/>
 
 <h4><b>Curso:</b> :green_book: :books: 59 capítulos + Exercícios</h4>
-<h4><b>Status do Curso:</b> :speech_balloon: Estudando</h4>
+<h4><b>Status do Curso:</b> :white_check_mark: Concluído</h4>
+
