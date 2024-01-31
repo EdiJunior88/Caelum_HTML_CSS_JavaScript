@@ -11,6 +11,14 @@ Site da apostila Caelum (online e atualizada) - https://www.caelum.com.br/aposti
 
 <hr/>
 
+<h3>Tecnologias Utilizadas</h3>
+
+- <img width='25' height='25' src='https://img.stackshare.io/service/1209/javascript.jpeg' alt='JavaScript'/> [JavaScript](https://developer.mozilla.org/en-US/docs/Web/JavaScript) – Languages
+
+Para ver todas as tecnologias [clique aqui](/techstack.md)
+
+<hr>
+
 <p>
 Esta apostila da Caelum visa ensinar de uma maneira elegante, mostrando apenas o que é necessário e quando é necessário, 
 no momento certo, poupando o leitor de assuntos que não costumam ser de seu interesse em determinadas fases do aprendizado.
