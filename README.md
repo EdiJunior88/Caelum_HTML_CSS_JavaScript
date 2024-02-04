@@ -97,5 +97,4 @@ previamente.
 <hr/>
 
 <h4><b>Curso:</b> :green_book: :books: 59 capítulos + Exercícios</h4>
-<h4><b>Status do Curso:</b> :white_check_mark: Concluído</h4>
-
+<h4><b>Status do Curso:</b> ✅ Concluído</h4>
